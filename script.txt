@@ -1,0 +1,33 @@
+const mainbody = document.querySelector('.main');
+let loginbtnhome = document.querySelector('.loginbtnhome');
+let logincontainer = document.querySelector('.logincontainer');
+let body2 = document.querySelector('.body2');
+
+
+loginbtnhome.addEventListener('click', () => {
+    
+    mainbody.classList.add('maintologin');
+    console.log('Done')
+    setTimeout(() => {
+        mainbody.style.display = "none" ;
+    },500);
+    setTimeout(() => {
+        
+        console.log('Done again');
+        body2.style.display = "flex";
+        loginbtnhome.style.display = "none";
+    },600);
+    setTimeout(() => {
+    body2.classList.add('loginactive');
+    },700);
+})
+
+function removelogin(){
+    mainbody.classList.remove('maintologin');
+    setTimeout(() =>{
+    mainbody.style.display = "block" ;
+    },300);
+    body2.classList.remove('loginactive');
+    console.log('removal Done');
+    loginbtnhome.style.display = "block";
+}
