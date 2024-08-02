@@ -24,7 +24,7 @@ No special tools are required. You only need a web browser to view and test the 
 2. **Navigate to the Project Directory:**
 
    ```sh
-   cd divine-ed
+   cd EdTech
 3. **Open index.html in Your Web Browser:**
 
    ```sh
